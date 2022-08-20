@@ -6,13 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="plugins/Glider/glider.css">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <script src="plugins/Glider/glider.js"></script>
+    <script type="text/javascript"></script>
     <title>Welcome to the home page</title>
 </head>
 <body>
 
     <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">JS Study</a>
+          <a class="navbar-brand">JS Study</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -28,6 +32,18 @@
           </div>
         </div>
       </nav>
+
+      <div class="glider-contain">
+        <div class="glider">
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+          <div>4</div>
+        </div>
+        <button aria-label="Previous" class="glider-prev">«</button>
+        <button aria-label="Next" class="glider-next">»</button>
+        <div role="tablist" class="dots"></div>
+      </div>
 
 </body>
 </html>
