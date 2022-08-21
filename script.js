@@ -5,7 +5,7 @@
         // With / we can start the regular expression, separating our prohibited words with | and ending
         // the list with / again, '\b' tells that swears are only the whole words, the 'gi' flags tell that
         // our list is global and case insensitive, so ass and Ass are both censored
-        let swears = /\bass\b|\bshit\b|\bjerk\b|\bfuck\b|\bfaggot\b|\bcorinthians\b/gi;
+        let swears = /\bass\b|\bshit\b|\bjerk\b|\bfuck\b|\bfaggot\b|\bcorinthians\b|\bcu\b/gi;
         // Declaring the variable that get the textarea value 
         let userInput = textInput.value;
         // Declaring the variable that search for any bad words in our regex and replace them with "****"
@@ -13,8 +13,14 @@
         // Here we get the textarea again and implement the previous variable
         document.getElementById('censorshipBox').value = userCensoredOutput;
     }
+    
+    function atraso(){
+    let delay = 2000;
+    setTimeout(censorSwearing, delay); 
+    }
 }
 
+{
 window.addEventListener('load', function(){
     new Glider(document.querySelector('.glider'), {
         slidesToShow: 1,
@@ -26,3 +32,4 @@ window.addEventListener('load', function(){
         }
       });
   })
+}
