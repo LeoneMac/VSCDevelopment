@@ -1,4 +1,3 @@
-{
     function censorSwearing(){
         const textInput = document.getElementById('censorshipBox');
         const censoredWordBackup = textInput.value;
@@ -20,18 +19,3 @@
     //     let delay = 2000;
     //     setTimeout(censorSwearing, delay); 
     // }
-}
-
-{
-window.addEventListener('load', function(){
-    new Glider(document.querySelector('.glider'), {
-        slidesToShow: 1,
-        dots: '#dots',
-        draggable: true,
-        arrows: {
-          prev: '.glider-prev',
-          next: '.glider-next'
-        }
-      });
-  })
-}
